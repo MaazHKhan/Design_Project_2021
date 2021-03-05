@@ -4,10 +4,10 @@ import pylab as lab
 from commpy.filters import rrcosfilter
 
 
-Data = np.genfromtxt("RRC.txt",dtype=lab.complex128)
+#Data = np.genfromtxt("RRC.txt",dtype=lab.complex128)
 
-plt.plot(Data)
-plt.show
+#plt.plot(Data)
+#plt.show
 #FREQ = 99994.3 Hz
 #Phase = 88.6
 X = 10
@@ -20,12 +20,12 @@ Sinc = 5*np.sinc((t*np.pi)/X)
 #plt.plot(Sinc)
 #plt.show()
 
-Filter_O = np.convolve(Data, Sinc, "Same")
+# Filter_O = np.convolve(Data, Sinc, "Same")
 
-filter_data =Filter_O[3150:27385] 
+# filter_data =Filter_O[3150:27385] 
 
-plt.plot(np.abs(filter_data))
-plt.show()
+# plt.plot(np.abs(filter_data))
+# plt.show()
 
 
 
